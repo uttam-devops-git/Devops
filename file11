@@ -1,0 +1,12 @@
+i
+#!/bin/bash
+
+echo "Enter the age :"
+read a
+
+if [ $a -ge 18 ]
+then
+ echo "He is  eligible for voting"
+else
+ echo "He is not eligible  for voting"
+fi
