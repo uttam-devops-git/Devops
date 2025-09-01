@@ -1,4 +1,11 @@
-hjhbjhvghvjjgjbaxjbabv
+#!/bin/ksh
 
-bxuahxjkabxj
-gcasxabsx
+Cpuuseage=top -bn1 | grep “cpu” | awk -F “ “ ‘{ print 100 - $3 } ‘
+  echo “ Cpuuseage is : $cpuuseage”
+
+If [ $cpuuseage -gt 45 ]
+ then 
+    echo “ cpu utilisation is high “ | mail -s “cpu utilisation is high “ -c “uttamgowdahg8068@gmail.com”
+Else 
+  echo “ Cpu utilisation is normal “ 
+fi  
