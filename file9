@@ -1,0 +1,20 @@
+
+
+#!/bin/bash
+
+echo "enter 1st number : "
+read a
+echo "Enter  2nd number :"
+read b
+
+sum=$((a+b))
+sub=$((a-b))
+mul=$((a*b))
+
+echo "sum is : $sum sub is :$sub mult is :$mul"
+
+if [ $a -lt $b ]
+then
+ div=$((b/a))
+ echo "Div is :$div"
+fi
