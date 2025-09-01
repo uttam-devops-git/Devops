@@ -1,0 +1,18 @@
+i#!/bin/ksh
+
+echo "enter  name :"
+read a
+
+if [ -f $a ]
+then
+ echo " Content is"
+  cat $a
+  echo "line count is "
+  wc -l $a
+elif [ -d $a ]
+then
+ echo " file list "
+   ls
+else
+ echo " Random name "
+fi
