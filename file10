@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/bin/zsh
 
 echo "Enter the number"
 read a
